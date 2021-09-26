@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    -ms-user-select:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+     user-select:none;
+     text-transform: uppercase;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height:4rem;
+    background-color: #2B9E3C;
+}
+
+.inactive{
+    background-color: #888;
+    color:#222;
+}
+
+.inactive:hover{
+    background-color: #555!important;
+}
+
+.calendar{
+    height: calc(100vh - 4rem);
+}
+
+body{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.navbar i{
+    font-size: 2rem;
+}
+
+.navbar button{
+    width:3rem;
+    height:3rem;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    border: 2px black solid; 
+    transition: background-color .2s ease;
+    cursor:pointer;
+}
+
+.navbar button:hover{
+    background-color: #4fce62;
+}
+
+.days_names{
+    width: 100vw;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    border-bottom: 5px black solid;
+    border-top: 5px black solid;
+}
+
+.day_name h3{
+    text-align: center;
+}
+
+.day_name:nth-child(1){
+    border-left: none;
+}
+
+.day_name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:3rem;
+    border-left: 5px solid black;
+    background-color:#ccc;
+}
+
+.current{
+    background-color: #2B9E3C;
+    color:#eee;
+}
+
+.current:hover{
+    background-color: #167724!important;
+}
+
+.days_show{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: calc(100% - 3rem);
+    width:100vw;
+}
+
+.day{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size:2rem;
+    border: 1px solid #999;
+    transition: background-color .1s ease;
+}
+
+.day:hover{
+   background-color: #ccc;
+}
+
+.year_and_month_text_container{
+    width: 60%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.year_and_month_text{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 725px){
+    .day_name h3{
+        font-size: .7rem;
+    }
+    .day_name{
+        border-left: 2px solid black;
+    }
+    .days_names{
+        border-bottom: 2px black solid;
+        border-top: 2px black solid;
+    }
+    
+    h4{
+        font-size: 1.25rem;
+    }
+}

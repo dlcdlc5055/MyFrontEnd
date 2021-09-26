@@ -1,0 +1,5 @@
+const gnome40LaptopImg = "https://os.gnome.org/assets/laptop.png"
+const monitorImg = "https://os.gnome.org/assets/hardware.svg"
+const gnomeBoxesImg = "https://os.gnome.org/assets/boxes.svg"
+const warningIconImg = "https://os.gnome.org/assets/boxes.svg"
+const chatIconImg = "https://os.gnome.org/assets/chat.svg"

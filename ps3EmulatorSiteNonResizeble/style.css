@@ -1,0 +1,290 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+    background-color:#2a45bf;
+}
+
+nav{
+    background-color:rgba(118,72,241,.8);
+    width:100%;
+    height:4.4rem;
+    backdrop-filter: blur(6px);
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 1000;
+}
+
+.inner_nav{
+    height:4.4rem;
+    max-width:1300px;
+    margin:auto;
+    opacity:1;
+    display: flex;
+    justify-content:center;
+}
+
+.nav_item{
+    padding:0rem 1.3rem;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    color:#eee;
+    cursor: pointer;
+}
+
+
+.nav_item:hover{
+    border-bottom: 3px solid white;
+}
+
+.logo{
+    font-size:40px;
+    font-weight:1000;
+}
+
+.nav_item h2{
+    font-weight: 300;
+}
+
+.description{
+    margin-top: 4rem!important;
+    height:calc(100vh - 4rem);
+    width: 80vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.description_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25rem;
+    color:#fff;
+    opacity:.7;
+}
+
+.description_left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center;
+    color:#fff;
+}
+
+.description_left h1{
+    opacity:.7;
+    margin-bottom: 1rem;
+    width: 35rem;
+    font-size: 2.5rem;
+}
+
+.description_left p{
+    opacity:.7;
+    width: 40rem;
+    margin-bottom: 1rem;
+    font-size: 1.25rem
+}
+
+.download_btn{
+    border: 1px solid #ddd;
+    border-radius:10000px;
+    padding:.7rem 1.25rem;
+    font-size: 1.25rem;
+    border: 3px solid #ddd;
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transition: all .33s ease;
+    cursor: pointer;
+}
+
+.download_btn:hover{
+    transform:scale(1.2);
+}
+
+.game_to_play{
+    background-color:#eee;
+    opacity:1;
+    width: 100%;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.game{
+    display: flex;
+    margin: 1rem auto;
+    width:70%;
+    align-items: center;
+    background-color: #ccc;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform .8s ease
+}
+
+.game:hover{
+    transform: scale(1.07)
+}
+
+.icon{
+    font-size: 2rem;
+    padding: 1rem;
+    background: #0575E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: #eee;
+margin-right: 1rem;
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.c1{
+    margin: auto;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+}
+
+.system_requirements{
+    height: 30rem;
+    width: 100%;
+    background-color: #eee;
+}
+
+.card_container{
+    height: 100%;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.card{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius:20px;
+    overflow: hidden;
+    transition: transform .8s ease;
+}
+
+.even{
+    border-left: 3px solid #ccc;
+    border-right: 3px solid #ccc;
+}
+
+.card:hover{
+    transform:scale(1.133)
+}
+
+.spec_type{
+    background: #0575E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #eee;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row{
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.25rem;
+    min-width: 17.5vw;
+}
+
+.odd{
+    background-color: #ccc;
+}
+
+.t1{
+    background-color: #eee;
+    width: 100%;
+}
+
+.t1 h1{
+    margin: auto;
+    text-align: center;
+}
+
+.links_section{
+    background-color: #eee;
+    height: 6rem;
+    padding-bottom: 2rem;
+}
+
+.links_social_media{
+    height: 100%;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    background: #0575E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #eee;
+    overflow: hidden;
+    border-radius:10px;
+    cursor: pointer;
+}
+
+.t2{
+    background-color: #eee;
+    width: 100%;
+    padding-bottom: 2.25rem;
+    font-size: 1.33rem
+}
+
+.t2 h1{
+    margin: auto;
+    text-align: center;
+}
+
+.link{
+    transition: transform .8s ease;
+}
+
+.link:hover{
+    transform: scale(1.2)
+}
+
+.fa-playstation{
+
+}
+
+.fa-playstation:hover{
+
+}

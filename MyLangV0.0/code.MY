@@ -1,0 +1,33 @@
+const value = 12
+const value2 = value + value
+var x = 10
+var x += 1
+var x ++
+
+if x <= 11 
+    var x *= 100
+    break
+
+while i in 100
+    var x += value
+    break
+
+alert x 
+println  x 
+println  value 
+println value2 
+print value2 
+clear
+
+var x = 0
+
+if x == 0 
+    var x *= 100
+    break
+
+
+const newVal = false
+
+if newVal == false 
+    println  newVal 
+    break

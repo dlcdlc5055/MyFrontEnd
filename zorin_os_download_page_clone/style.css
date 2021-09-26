@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: arial;
+    text-transform: uppercase;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fbfbfb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.icon{
+    height: 400px;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:space-between;
+    height: 550px;
+    width: 42vw;
+    min-width:450px;
+    max-width: 690px;
+    padding-left:50px
+}
+
+span{
+    font-weight:1000;
+}
+
+.title{
+    font-weight: 100;
+    color: darkgray;
+}
+
+.the-core-esential{
+    font-size: 2.7rem;
+    font-weight: 700;
+}
+
+.description{
+    font-weight: 500;
+}
+
+.feautures_show{
+    color: darkgray;
+    display: flex;
+    width: 70%;
+    height: 25%;
+}
+
+.feature i{
+    font-size: 2.5rem;
+}
+
+.feature h4{
+    font-size: .85rem;
+    font-weight: 200;
+    margin-top: 1rem;
+
+}
+
+.feature{
+    height: 100%;
+}
+
+.download_btns{
+    display: flex;
+    align-items: center;    
+}
+
+.download_btns button{
+    height: 65px;
+    width:160px;
+    color: white;
+    background-color: #44e;
+    border-radius:.7rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size:1rem;
+    transition: background-color .4s ease;
+}
+
+.download_btns h3{
+    margin-left: 1rem;
+    font-weight: 100;
+}
+
+.download_btns button:hover{
+    background-color: rgb(54, 54, 163);  
+}
+
+@media only screen and (max-width: 1410px){
+    .container{
+        flex-direction: column;
+    }
+    .details{
+        margin-top:3rem;
+    }
+
+    .icon{
+        margin-top:3rem;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .icon{
+        width: 100vw;
+        height: auto;
+    }
+}
+
+.back-btn{
+    position: fixed;
+    height:60px;
+    width: 60px;
+    top: 6px;
+    left: 6px;
+    font-size: 30px;
+    font-weight: 1000;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    background-color: lightgray;
+    transition: color .2s ease;
+    transition: background-color .2s ease;
+}
+
+.back-btn:hover{
+    background-color: gray;
+    color: #eee;
+}

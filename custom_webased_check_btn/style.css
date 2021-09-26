@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.button{
+    width: 40rem;
+    height:17rem;
+    background-color: #222;
+    border-radius: 1000rem;
+    transition: all .4s ease;
+}
+
+.circle_btn_part{
+    height:17rem;
+    width:17rem;
+    border-radius: 1000rem;
+    background-color:#aaa;
+    border:solid #fff 10px;
+    transition: all .4s ease;
+}

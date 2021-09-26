@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+    -ms-user-select:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+     user-select:none;
+}
+
+.page{
+    height: 100vh;
+    width: 100vw;
+    background-color: #480e9e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar{
+    height: 22.5rem;
+    width: 20rem;
+    background-color:white;
+    border-radius:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.date-data{
+    width: 100%;
+    height:3.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+    align-items: center;
+}
+
+.date-data h1{
+font-size:25px
+}
+
+.date-data i{
+    font-size:45px;
+    cursor: pointer;
+    background-color: darkgray;
+    padding: 0px 15px;
+    border-radius: 10px;
+}
+
+.c1{
+    width:100%;
+    height: 100%;
+}
+
+.weekdays{
+    height: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: gray;
+    margin-top: 5px;
+}
+
+.weekdays h4{
+    font-weight: 100;
+}
+
+.month{
+   padding-top: .6rem;
+   padding-left: .6rem;
+    padding-right: .6rem;
+   width: 100%;
+    height: 100%;
+    padding-bottom:3rem;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr
+}
+
+.month div{
+display: flex;
+align-items: center;
+    justify-content: center;
+}
+
+.month div:hover{
+    background-color: limegreen;
+    border-radius: 7px;
+}
+
+.prev{
+    font-weight: 100;
+    color: gray;
+}
+
+.today{
+    background-color:yellow!important;
+    border-radius: 7px;
+}

@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    min-height: 800px;
+    min-width: 1200px;
+}
+
+.array_container {
+    height: 800px;
+    width: 1200px;
+    background-color: #eee;
+    border-radius: 1.25rem;
+    padding: 1rem;
+    position: relative;
+}
+
+.green {
+    background-color: green!important;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.point{
+    height: 60px;
+    width: 50px;
+    border-radius: 2000rem;
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    transition-property:transform,background-color;
+    transition-duration: 1s ;
+    transition-timing-function: linear;
+}

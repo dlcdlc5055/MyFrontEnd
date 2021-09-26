@@ -1,0 +1,29 @@
+.input-group{
+    width: 55vw;
+    margin: auto;
+}
+
+.input_container{
+    height:4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-outline-light:hover{
+    border-left: 1px solid #111
+}
+
+.input-font{
+    font-size: 1.4rem;
+}
+
+.form-control{
+    font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 1050px) {
+    .input-group{
+        width: 90vw;
+    }
+}

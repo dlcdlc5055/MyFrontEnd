@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 100;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+.d-none {
+    display: none;
+}
+
+.darkmode-toggle-container {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 100000;
+}
+
+.darkmode-toggle {
+    width: 3rem;
+    height: 1.2rem;
+    border-radius: 1000rem;
+    cursor: pointer;
+    background: #667db6;
+    background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 .2rem
+}
+
+.toggle-inner {
+    height: .75rem;
+    width: .75rem;
+    border-radius: 100%;
+    background-color: white;
+    transition: transform .3s ease;
+}
+
+.active-toggle {
+    transform: translateX(1.9rem);
+}
+
+.dark-background {
+    background: #0F2027;
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+}
+
+.mobile,
+.desktop {
+    height: 100vh;
+    width: 100vw;
+}
+
+.mobile {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-display {
+    height: 30rem;
+    width: calc(100vw - 1rem);
+    max-height: 25vh;
+    background-color: #09302899;
+    opacity: .9;
+    margin: .5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: .5rem
+}
+
+.mobile-controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #0007;
+    width: calc(100vw - 1rem);
+    margin: .5rem;
+    border-radius: 1rem;
+    height: 100%;
+    min-height: 20rem;
+    overflow: hidden;
+    padding: .3rem
+}
+
+.mobile-btn {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #203A4366;
+    border-radius: 1rem;
+    margin: .2rem;
+    font-size: 1.5rem;
+    transition: background-color .05 ease;
+}
+
+.mobile-btn:hover {
+    background-color: #203A43bb;
+}
+
+.mobile-btn:active {
+    background-color: #203A43ff;
+}
+
+.btn-text {
+    font-size: .9rem;
+}
+
+.btn_op {
+    transition: background-color .05 ease;
+    background: #005C97;
+    background: -webkit-linear-gradient(to bottom, #36379566, #005C9766);
+    background: linear-gradient(to bottom, #36379566, #005C9766);
+}
+
+.btn_op:hover {
+    background: #005C97;
+    background: -webkit-linear-gradient(to bottom, #363795bb, #005C97bb);
+    background: linear-gradient(to bottom, #363795bb, #005C97bb);
+}
+
+.btn_op:active {
+    background: #005C97;
+    background: -webkit-linear-gradient(to bottom, #363795, #005C97);
+    background: linear-gradient(to bottom, #363795, #005C97);
+}
+
+.mobile-display {
+    overflow: hidden;
+}
